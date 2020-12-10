@@ -10,15 +10,17 @@ input[type="number"] {
     -moz-appearance: textfield;
 }
 
-.main-image {
-    height: 100vh;
-    width: 100vw;
-    background-image: url("assets/bg4.jpg");
-    background-size: cover;
-    background-attachment: fixed;
+h1 {
+    padding-top: 1rem;
 }
 
-.rundad {
-    border-bottom-right-radius: 0.25rem !important;
-    border-top-right-radius: 0.25rem !important;
+#ghimg {
+    height: auto;
+    width: 24px;
+    padding-bottom: 1px;
+}
+
+body {
+    background-image: url("assets/bg4.jpg");
+    background-position: center;
 }

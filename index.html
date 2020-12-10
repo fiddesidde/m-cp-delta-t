@@ -1,53 +1,157 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="h-100">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mcpdeltaT</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <title>mcpdeltaT</title>
+
+
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style> -->
+
+
 </head>
 
-<body lang="sv-SE">
-    <div class="main-image">
-        <div class="container">
-            <h1>mcpdeltaT</h1>
-            <br>
-            <div class="row g-3 mb-3">
-                <h2>Effekt</h2>
-                <div class="col-md form-floating">
-                    <input class="form-control number" id="m1" name="m1" type="text" min="0" placeholder="0">
-                    <label class="ms-2" for="m1">Flöde [l/s]</label>
-                </div>
-                <div class="col-md form-floating">
-                    <input class="form-control number" id="cp1" name="cp1" type="text" min="0" placeholder="0">
-                    <label class="ms-2" for="cp1">c<sub>p</sub> [kJ/kg K]</label>
-                </div>
-                <div class="col-md form-floating">
-                    <input class="form-control number" id="dt1" name="dt1" type="text" min="0" placeholder="0">
-                    <label class="ms-2" for="dt1">&Delta;T [&#176;C]</label>
+<body class="d-flex flex-column h-100">
 
-                </div>
-                <div class="col-md form-floating">
-                    <input class="form-control" readonly id="kwres" name="kwres" type="number" min="0" placeholder="0">
-                    <label class="ms-2" for="kwres">Effekt [kW]</label>
-                </div>
-            </div>
-        </div>
+  <!-- Begin page content -->
+  <main class="container">
+    <h1>mcpdeltaT</h1>
+    <br>
+    <!-- EFFEKT -->
+    <div class="row g-3 mb-3">
+      <h2>Effekt</h2>
+      <div class="col-md form-floating">
+        <input class="form-control number" id="m1" name="m1" type="text" placeholder="0">
+        <label class="ms-2" for="m1">Flöde [l/s]</label>
+      </div>
+      <div class="col-md form-floating">
+        <input class="form-control number" id="cp1" name="cp1" type="text" placeholder="0">
+        <label class="ms-2" for="cp1">c<sub>p</sub> [kJ/kg K]</label>
+      </div>
+      <div class="col-md form-floating">
+        <input class="form-control number" id="dt1" name="dt1" type="text" placeholder="0">
+        <label class="ms-2" for="dt1">&Delta;T [&#176;C]</label>
+
+      </div>
+      <div class="col-md form-floating">
+        <input class="form-control" readonly id="kwres" name="kwres" type="number" placeholder="0">
+        <label class="ms-2" for="kwres">Effekt [kW]</label>
+      </div>
     </div>
+    <!-- FLÖDE -->
+    <div class="row g-3 mb-3">
+      <h2>Flöde</h2>
+      <div class="col-md form-floating">
+        <input class="form-control number" readonly id="mres" name="mres" type="text" placeholder="0">
+        <label class="ms-2" for="mres">Flöde [l/s]</label>
+      </div>
+      <div class="col-md form-floating">
+        <input class="form-control number" id="cp2" name="cp2" type="text" placeholder="0">
+        <label class="ms-2" for="cp2">c<sub>p</sub> [kJ/kg K]</label>
+      </div>
+      <div class="col-md form-floating">
+        <input class="form-control number" id="dt2" name="dt2" type="text" placeholder="0">
+        <label class="ms-2" for="dt2">&Delta;T [&#176;C]</label>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
-        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
-        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+      </div>
+      <div class="col-md form-floating">
+        <input class="form-control" id="kw2" name="kw2" type="number" placeholder="0">
+        <label class="ms-2" for="kw2">Effekt [kW]</label>
+      </div>
+    </div>
+    <!-- Cp -->
+    <div class="row g-3 mb-3">
+      <h2>Specifik värmekapacitet</h2>
+      <div class="col-md form-floating">
+        <input class="form-control number" id="m3" name="m3" type="text" placeholder="0">
+        <label class="ms-2" for="m3">Flöde [l/s]</label>
+      </div>
+      <div class="col-md form-floating">
+        <input class="form-control number" readonly id="cpres" name="cpres" type="text" placeholder="0">
+        <label class="ms-2" for="cpres">c<sub>p</sub> [kJ/kg K]</label>
+      </div>
+      <div class="col-md form-floating">
+        <input class="form-control number" id="dt3" name="dt3" type="text" placeholder="0">
+        <label class="ms-2" for="dt3">&Delta;T [&#176;C]</label>
 
+      </div>
+      <div class="col-md form-floating">
+        <input class="form-control" id="kw3" name="kw3" type="number" placeholder="0">
+        <label class="ms-2" for="kw3">Effekt [kW]</label>
+      </div>
+    </div>
+    <!-- delta T -->
+    <div class="row g-3 mb-3">
+      <h2>Temperaturdifferens</h2>
+      <div class="col-md form-floating">
+        <input class="form-control number" id="m4" name="m4" type="text" placeholder="0">
+        <label class="ms-2" for="m4">Flöde [l/s]</label>
+      </div>
+      <div class="col-md form-floating">
+        <input class="form-control number" id="cp4" name="cp4" type="text" placeholder="0">
+        <label class="ms-2" for="cp4">c<sub>p</sub> [kJ/kg K]</label>
+      </div>
+      <div class="col-md form-floating">
+        <input class="form-control number" readonly id="dtres" name="dtres" type="text" placeholder="0">
+        <label class="ms-2" for="dtres">&Delta;T [&#176;C]</label>
+
+      </div>
+      <div class="col-md form-floating mb-5">
+        <input class="form-control" id="kw4" name="kw4" type="number" placeholder="0">
+        <label class="ms-2" for="kw4">Effekt [kW]</label>
+      </div>
+    </div>
+  </main>
+
+
+
+
+
+
+  <footer class="footer mt-auto py-1 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-11">
+          <span class="text-muted">&copy; Fredrik Mellberg <a href="http://www.fremworks.com">fremworks.com</a></span>
+        </div>
+        <div class="col-sm"><span class="text-muted"><a href="https://github.com/fiddesidde"><img class="float-end-md"
+                id="ghimg" src="/assets/gh.png" alt=""></a></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+  <script src="misc.js"></script>
 </body>
 
 </html>
