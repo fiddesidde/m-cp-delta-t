@@ -13,7 +13,7 @@ input[type="number"] {
 .main-image {
     /* height: 100vh; */
     width: 100vw;
-    background-image: url("backg2.jpg");
+    background-image: url("assets/backg2.jpg");
     background-size: cover;
     /* background-attachment: fixed; */
 }
