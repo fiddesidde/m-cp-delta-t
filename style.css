@@ -20,7 +20,7 @@ h1 {
     padding-bottom: 1px;
 }
 
-body {
+.bgimage {
     background-image: url("assets/bg4.jpg");
     background-position: center;
 }

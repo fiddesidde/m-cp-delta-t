@@ -27,9 +27,9 @@ function isItIE() {
     return is_it_ie
 }
 if (isItIE()) {
-    alert(
-        "You are using an outdated browser. Please upgrade your browser or activate Google Chrome Frame to improve your experience."
-    )
+    document.body.removeAttribute("class", "bgimage")
+    document.body.innerHTML =
+        "<h1>THIS WEBPAGE DOES NOT WORK WITH INTERNET EXPLORER!</h1>"
     console.log("It is Internet Explorer")
 } else {
     console.log("It is not Internet Explorer")
