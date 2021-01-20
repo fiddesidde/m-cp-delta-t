@@ -42,64 +42,62 @@
     <!-- FLÖDE -->
     <div class="row g-3 mb-3">
       <h2>Flöde</h2>
-      <div class="col-md form-floating">
-        <input class="form-control number" readonly id="mres" name="mres" type="text" placeholder="0">
-        <label class="ms-2" for="mres">Flöde [l/s]</label>
-      </div>
-      <div class="col-md form-floating">
-        <input class="form-control number" id="cp2" name="cp2" type="text" placeholder="0">
-        <label class="ms-2" for="cp2">c<sub>p</sub> [kJ/kg K]</label>
-      </div>
-      <div class="col-md form-floating">
-        <input class="form-control number" id="dt2" name="dt2" type="text" placeholder="0">
-        <label class="ms-2" for="dt2">&Delta;T [&#176;C]</label>
-
-      </div>
-      <div class="col-md form-floating">
+      <div class="col-md form-floating order-md-4">
         <input class="form-control" id="kw2" name="kw2" type="text" placeholder="0">
         <label class="ms-2" for="kw2">Effekt [kW]</label>
       </div>
+      <div class="col-md form-floating order-md-2">
+        <input class="form-control number" id="cp2" name="cp2" type="text" placeholder="0">
+        <label class="ms-2" for="cp2">c<sub>p</sub> [kJ/kg K]</label>
+      </div>
+      <div class="col-md form-floating order-md-3">
+        <input class="form-control number" id="dt2" name="dt2" type="text" placeholder="0">
+        <label class="ms-2" for="dt2">&Delta;T [&#176;C]</label>
+      </div>
+      <div class="col-md form-floating order-md-1">
+        <input class="form-control number" readonly id="mres" name="mres" type="text" placeholder="0">
+        <label class="ms-2" for="mres">Flöde [l/s]</label>
+      </div>
+
     </div>
     <!-- Cp -->
     <div class="row g-3 mb-3">
       <h2>Specifik värmekapacitet</h2>
-      <div class="col-md form-floating">
+      <div class="col-md form-floating order-md-4">
+        <input class="form-control" id="kw3" name="kw3" type="text" placeholder="0">
+        <label class="ms-2" for="kw3">Effekt [kW]</label>
+      </div>
+      <div class="col-md form-floating order-md-1">
         <input class="form-control number" id="m3" name="m3" type="text" placeholder="0">
         <label class="ms-2" for="m3">Flöde [l/s]</label>
       </div>
-      <div class="col-md form-floating">
-        <input class="form-control number" readonly id="cpres" name="cpres" type="text" placeholder="0">
-        <label class="ms-2" for="cpres">c<sub>p</sub> [kJ/kg K]</label>
-      </div>
-      <div class="col-md form-floating">
+      <div class="col-md form-floating order-md-3">
         <input class="form-control number" id="dt3" name="dt3" type="text" placeholder="0">
         <label class="ms-2" for="dt3">&Delta;T [&#176;C]</label>
-
       </div>
-      <div class="col-md form-floating">
-        <input class="form-control" id="kw3" name="kw3" type="text" placeholder="0">
-        <label class="ms-2" for="kw3">Effekt [kW]</label>
+      <div class="col-md form-floating order-md-2">
+        <input class="form-control number" readonly id="cpres" name="cpres" type="text" placeholder="0">
+        <label class="ms-2" for="cpres">c<sub>p</sub> [kJ/kg K]</label>
       </div>
     </div>
     <!-- delta T -->
     <div class="row g-3 mb-3">
       <h2>Temperaturdifferens</h2>
-      <div class="col-md form-floating">
+      <div class="col-md form-floating order-md-4">
+        <input class="form-control" id="kw4" name="kw4" type="text" placeholder="0">
+        <label class="ms-2" for="kw4">Effekt [kW]</label>
+      </div>
+      <div class="col-md form-floating order-md-1">
         <input class="form-control number" id="m4" name="m4" type="text" placeholder="0">
         <label class="ms-2" for="m4">Flöde [l/s]</label>
       </div>
-      <div class="col-md form-floating">
+      <div class="col-md form-floating order-md-2">
         <input class="form-control number" id="cp4" name="cp4" type="text" placeholder="0">
         <label class="ms-2" for="cp4">c<sub>p</sub> [kJ/kg K]</label>
       </div>
-      <div class="col-md form-floating">
+      <div class="col-md form-floating mb-5 order-md-3">
         <input class="form-control number" readonly id="dtres" name="dtres" type="text" placeholder="0">
         <label class="ms-2" for="dtres">&Delta;T [&#176;C]</label>
-
-      </div>
-      <div class="col-md form-floating mb-5">
-        <input class="form-control" id="kw4" name="kw4" type="text" placeholder="0">
-        <label class="ms-2" for="kw4">Effekt [kW]</label>
       </div>
     </div>
   </main>
