@@ -21,6 +21,9 @@ h1 {
 }
 
 .bgimage {
-    background-image: url('assets/bg4.jpg');
+    background-image: url('assets/bg_opt.jpg');
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
